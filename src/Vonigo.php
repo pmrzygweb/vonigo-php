@@ -150,7 +150,7 @@ class Vonigo {
             $this->showDebug('get-params: ', print_r($params, true));
         }
         if (sizeof($params)) {
-            $url .= '?' . http_build_query($params, NULL, '&');
+            $url .= '?' . http_build_query($params, '', '&');
         }
         if ($this->debug & VONIGO_DEBUG) {
             $this->showDebug('url:' . $url);
